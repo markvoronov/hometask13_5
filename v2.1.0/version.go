@@ -3,7 +3,6 @@ package v2_1_0
 import (
 	"encoding/json"
 	"encoding/xml"
-	"fmt"
 	"log"
 	"os"
 	"sort"
@@ -20,7 +19,7 @@ type patients struct {
 }
 
 func Do(sourcePath string, receiverPath string) error {
-	fmt.Println("Модуль четверой версии")
+	//	fmt.Println("Модуль четверой версии")
 
 	sourcefile, err := os.Open(sourcePath)
 	if err != nil {

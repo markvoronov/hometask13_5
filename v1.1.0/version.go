@@ -2,7 +2,6 @@ package v1_1_0
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"os"
 	"sort"
@@ -15,7 +14,7 @@ type Person struct {
 }
 
 func Do(sourcePath string, receiverPath string) error {
-	fmt.Println("Модуль версии 1.1.0")
+	//fmt.Println("Модуль версии 1.1.0")
 
 	sourcefile, err := os.Open(sourcePath)
 	if err != nil {
